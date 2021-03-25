@@ -1,0 +1,61 @@
+@keyframes showUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-container {
+    position:fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    z-index: 200;
+    transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
+}
+
+.modal-container.active {
+    opacity: 1;
+    display: flex;
+}
+
+.modal {
+    position: relative;
+    width: 70%;
+    height: 500px;
+    background: #ffffff8a;
+    border-radius: 20px;
+    box-shadow: -1px -1px 0 0 #fff;
+    animation: showUp .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+.close-Btn {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    font-size: 40px;
+    font-weight: 600;
+    background: #ffffff00;
+    color: #ebb9ff;
+    cursor: pointer;
+    border: none;
+    transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
+}
+
+.close-Btn:hover {
+    color: #fff;
+}
+
+.close-Btn:active {
+    outline: none;
+}

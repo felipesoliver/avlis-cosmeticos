@@ -1,6 +1,6 @@
 .banner {
     position: relative;
-    margin: 220px auto 200px auto;
+    margin: 150px auto 200px auto;
     width: 70%;
     height: 400px;
     display: flex;
@@ -27,6 +27,7 @@
     width: 80%;
     font-size: 50px;
     font-weight: 700;
+    letter-spacing: 2px;
     color: #fff;
 }
 
@@ -35,7 +36,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    color: #e2a1fc;
+    color: #c98fe0;
 }
 
 .banner img {
