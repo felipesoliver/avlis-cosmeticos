@@ -183,9 +183,14 @@
     color: inherit;
     text-transform: none;
     background-color: transparent;
+    outline: none;
     border: 0;
     margin: 0;
     overflow: visible;
+  }
+
+  .hamburger:active {
+    outline: none;
   }
 
   .hamburger::after {
