@@ -189,7 +189,7 @@
     overflow: visible;
   }
 
-  .hamburger:active {
+  .hamburger:focus {
     outline: none;
   }
 
