@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+::-webkit-scrollbar {
+  border-radius: 20px;
+  background: #fdbcbc;
+}
+
+::-webkit-scrollbar-thumb {
+  border: solid 2px #ffd6d6;
+  border-radius: 20px;
+  background: linear-gradient(to top, #e2a1fc, #f0a8a8);
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f5ddff;
+  animation: fadein 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
+  overflow-x: hidden;
+}
+
+.color-balls {
+  position: absolute;
+  top: -250px;
+  left: -220px;
+  width: 80%;
+  z-index: -1;
+}
+
+.color-balls1 {
+  position: absolute;
+  top: 650px;
+  right: -220px;
+  width: 60%;
+  z-index: -1;
+}
+
+.color-balls2 {
+  position: absolute;
+  top: 1560px;
+  left: 6%;
+  width: 50%;
+  z-index: -1;
+}
+
+.color-balls3 {
+  position: absolute;
+  top: 2250px;
+  right: -20px;
+  width: 60%;
+  z-index: -1;
+}
+
+.color-balls4 {
+  position: absolute;
+  top: 3190px;
+  left: 20%;
+  width: 30%;
+  z-index: -1;
+}
+
+.color-balls5 {
+  position: absolute;
+  top: 3700px;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.color-balls6 {
+  display: none;
+}
+
+.color-balls7 {
+  display: none;
+}
+
+/*# sourceMappingURL=general.css.map */

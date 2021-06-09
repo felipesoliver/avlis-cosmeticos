@@ -1,0 +1,90 @@
+.features div {
+  background: linear-gradient(45deg, #ffffff65 70%, #ffbcbc65);
+  backdrop-filter: blur(10px);
+}
+
+.features h2 {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  padding: 20px 0;
+  width: 80%;
+  font-size: 40px;
+  font-weight: 600;
+  text-shadow: 0 3px 3px #00000013;
+  letter-spacing: 2px;
+  color: #e2a1fc;
+  transform: translateX(-50%);
+}
+
+.features {
+  margin-top: 200px;
+  padding-top: 80px;
+  width: 100%;
+  height: fit-content;
+  box-sizing: content-box;
+}
+
+.features div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #fff;
+}
+.features ul {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 300px 300px;
+}
+.features ul li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #c98fe0;
+}
+.features ul li:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.features ul li:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.features ul li:nth-child(3) {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.features ul li:nth-child(4) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.features ul li:nth-child(5) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.features ul li:nth-child(6) {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.features ul li img {
+  margin-top: 50px;
+  width: 20%;
+}
+.features ul li h3 {
+  margin: 20px 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.features ul li span {
+  width: 80%;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=features.css.map */

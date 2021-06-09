@@ -1,0 +1,21 @@
+{
+  "name": "projeto-v-avliscosmeticos",
+  "version": "1.0.0",
+  "description": "> Landing-page web app developed for **Avlis** brandmark",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipesoliver/avlis-cosmeticos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipesoliver/avlis-cosmeticos/issues"
+  },
+  "homepage": "https://github.com/felipesoliver/avlis-cosmeticos#readme",
+  "devDependencies": {
+    "sass": "^1.32.12"
+  },
+  "dependencies": {}
+}

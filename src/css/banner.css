@@ -1,0 +1,50 @@
+.banner {
+  border-radius: 20px;
+}
+
+.banner {
+  background: linear-gradient(45deg, #ffffff65 70%, #ffbcbc65);
+  backdrop-filter: blur(10px);
+}
+
+.banner {
+  position: relative;
+  margin: 150px auto 0 auto;
+  width: 70%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -1px -1px 0 0 #fff, 0 0 0 0 #ffffff00;
+}
+
+.banner div {
+  margin-left: 55px;
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner div h2 {
+  margin-bottom: 16px;
+  width: 80%;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.banner div span {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #c98fe0;
+}
+.banner img {
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+}
+
+/*# sourceMappingURL=banner.css.map */

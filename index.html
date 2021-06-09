@@ -4,28 +4,83 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/media.css" media="screen and (max-width: 768px)">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="src/css/style.css">
         <title>Avlis Cosméticos</title>
     </head>
     <body>
+        <section class="modal-container" data-modal="container">
+            <div class="modal" data-modal="modal">
+                <button class="close-Btn" data-modal="close">x</button>
+                <div class="slide-wrapper">
+                    <ul class="slide-track">
+                        <li class="slide-items"></li>
+                        <li class="slide-items"></li>
+                        <li class="slide-items"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" data-modal="modal">
+                <button class="close-Btn" data-modal="close">x</button>
+                <div class="slide-wrapper">
+                    <ul class="slide-track">
+                        <li class="slide-items"></li>
+                        <li class="slide-items"></li>
+                        <li class="slide-items"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" data-modal="modal">
+                <button class="close-Btn" data-modal="close">x</button>
+                <div class="slide-wrapper">
+                    <ul class="slide-track">
+                        <li class="slide-items"></li>
+                        <li class="slide-items"></li>
+                        <li class="slide-items"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" data-modal="modal">
+                <button class="close-Btn" data-modal="close">x</button>
+                <div class="slide-wrapper">
+                    <ul class="slide-track">
+                        <li class="slide-items"></li>
+                        <li class="slide-items"></li>
+                        <li class="slide-items"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <header>
-            <img class="color-balls" src="images/balls.svg" alt="blurred colorfull balls">
-            <section class="container-menu" id="first-section">
-                <nav class="navigation-menu">
-                    <div class="brandmark">
-                        <a href="#"><img class="diamond" src="images/diamond.svg" alt="diamond icon"><span>Avlis</span> Cosméticos</a>
+            <img class="color-balls"  id="first-section" src="src/assets/balls1.svg">
+            <section class="container-menu">
+                <nav>
+                    <div class="brand">
+                        <a href="#"><img src="src/assets/diamond.svg" alt="diamond icon"><span>Avlis</span> Cosméticos</a>
                     </div>
-                    <ul class="pagelist">
-                        <li class="pagelist-items"><a href="#first-section">Início</a></li>
-                        <li class="pagelist-items"><a href="#">Produtos</a></li>
-                        <li class="pagelist-items"><a href="#">Sobre</a></li>
-                        <li class="pagelist-items">
-                            <p>Mais</p>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-items item1"><a href="#">Depoimentos</a></li>
-                                <li class="dropdown-items item2"><a href="#">Faq</a></li>
-                                <li class="dropdown-items item3"><a href="#">Contato</a></li>
+                    <button class="hamburger hamburger--elastic" type="button" data-burger-btn>
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </button>
+                    <ul data-pagelist>
+                        <li class="list-items-a">
+                            <a href="#first-section">Início</a>
+                        </li>
+                        <li class="list-items-a">
+                            <a href="#secound-section">Produtos</a>
+                        </li>
+                        <li>
+                            <span data-more>Mais</span>
+                            <ul data-dropdown>
+                                <li class="list-items-b">
+                                    <a href="#third-section">Depoimentos</a>
+                                </li>
+                                <li class="list-items-b">
+                                    <a href="#fourth-section">Sobre</a>
+                                </li>
+                                <li class="list-items-b">
+                                    <a href="#fifth-section">Faq</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -33,63 +88,205 @@
             </section>
         </header>
         <main>
-            <section class="banner" data-aos="behind">
-                <div class="banner-text">
-                    <h2 class="banner-title">Produtos para a beleza de seus cabelos</h2>
-                    <span class="banner-phrase">A Avlis é uma especialista no trato capilar. Com linhas profissionais, linhas de rotina popular para elas e também, com a linha barbershop para eles. </span>
+            <section class="banner">
+                <div>
+                    <h2>Produtos para a beleza de seus cabelos</h2>
+                    <span>A Avlis é uma especialista no trato capilar. Com linhas profissionais, linhas de rotina popular para elas e também, com a linha barbershop para eles. </span>
                 </div>
-                <img src="images/hairyw.png" alt="">
+                <img src="src/assets/hairyw.png" alt="">
             </section>
-            <img class="blue-ball" src="images/blueball.svg" alt="Blurred blue ball">
-            <section class="products" data-aos="under">
-                <h2 class="products-title">Produtos</h2>
-                <ul class="products-list">
-                    <li class="products-items">
-                        <figure><img src="images/professional.svg" alt=""></figure>
+            <img class="color-balls1" src="src/assets/balls2.svg">
+            <section class="products" id="secound-section" data-aos="up">
+                <h2>Nossos produtos</h2>
+                <ul>
+                    <li>
+                        <figure><img src="src/assets/professional.svg" alt="Ícone linha profissional"></figure>
                         <figcaption>Profissional</figcaption>
-                        <a href="#" data-modal="first-open-btn">confira!</a>
+                        <a href="#" data-modal="open">confira!</a>
                     </li>
-                    <li class="products-items">
-                        <figure><img src="images/comercial.svg" alt=""></figure>
+                    <li>
+                        <figure><img src="src/assets/comercial.svg" alt="Ícone da linha comercial"></figure>
                         <figcaption>Comercial</figcaption>
-                        <a href="#" data-modal="secound-open-btn">confira!</a>
+                        <a href="#" data-modal="open">confira!</a>
                     </li>
-                    <li class="products-items">
-                        <figure><img src="images/daily.svg" alt=""></figure>
+                    <li>
+                        <figure><img src="src/assets/daily.svg" alt="Ícone da linha dia-a-dia"></figure>
                         <figcaption>dia-a-dia</figcaption>
-                        <a href="#" data-modal="third-open-btn">confira!</a>
+                        <a href="#" data-modal="open">confira!</a>
                     </li>
-                    <li class="products-items">
-                        <figure><img src="images/shave.svg" alt=""></figure>
+                    <li>
+                        <figure><img src="src/assets/shave.svg" alt="Ícone da linha barbershop"></figure>
                         <figcaption>Barbershop</figcaption>
-                        <a href="#" data-modal="fourth-open-btn">confira!</a>
+                        <a href="#" data-modal="open">confira!</a>
                     </li>
                 </ul>
             </section>
+            <img class="color-balls2" src="src/assets/balls3.svg">
+            <section class="features" data-aos="up">
+                <h2>Porque preferem a Avlis?</h2>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="src/assets/feat-icon1.svg">
+                            <h3>Fórmula exclusiva</h3>
+                            <span>linhas e fórmulas desenvolvidas exclusivamente para cada tipo de cabelo</span>
+                        </li>
+                        <li>
+                            <img src="src/assets/feat-icon2.svg">
+                            <h3>Nutrição e saúde</h3>
+                            <span>produtos com ênfase na nutrição e tratamento saudável dos fios</span>
+                        </li>
+                        <li>
+                            <img src="src/assets/feat-icon3.svg">
+                            <h3>Revitalização dos fios</h3>
+                            <span>evolução e reconstrução comprovada em mais de 97,8% dos casos</span>
+                        </li>
+                        <li>
+                            <img src="src/assets/feat-icon4.svg">
+                            <h3>Produção especializada</h3>
+                            <span>criações pensadas e produzidas por especialistas da área</span>
+                        </li>
+                        <li>
+                            <img src="src/assets/feat-icon5.svg">
+                            <h3>Pagamento parcelado</h3>
+                            <span>pague suas compras com parcelamento em até 12x sem juros no cartão de crédito</span>
+                        </li>
+                        <li>
+                            <img src="src/assets/feat-icon6.svg">
+                            <h3>Frete</h3>
+                            <span>frete gratis nas compras acima de 200$</span>
+                        </li>
+                    </ul>
+                </div>                
+            </section>
+            <img class="color-balls3" src="src/assets/balls4.svg">
+            <section class="comments" id="third-section" data-aos="up">
+                <h2>O que dizem nossos clientes...</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <figure>
+                                <figcaption>Isabelle</figcaption>
+                            </figure>
+                            <span>" Ótimos produtos, com custo benefício acessível. Simplismente amei! "</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure>
+                                <figcaption>Suellen</figcaption>
+                            </figure>
+                            <span>" Os produtos Avlis mostrou ser o que tenho buscado na indústria de beleza há anos... "</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure>
+                                <figcaption>Lucas</figcaption>
+                            </figure>
+                            <span>" Cara, adiquiri a linha barbershop, e os resultados no cultivo da barba foram incríveis. "</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure>
+                                <figcaption>Fernanda</figcaption>
+                            </figure>
+                            <span>" Há alguns meses tive problemas capilares, e usar as máscaras da Avlis me ajudou demais, recomendo! "</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <img class="color-balls4" src="src/assets/balls5.svg">
+            <section class="about" id="fourth-section" data-aos="up">
+                <h2>Sobre Nós</h2>
+                <div class="box1">
+                    <p>A <span>Avlis Cosméticos</span> é uma companhia que investe em soluções duradouras, com eficácia comprovada no segmento de estética e saúde capilar. Nascida em 2014, a partir da constante necessidade de atender e exceder expectativas no quesito "eficiência", nosso compromisso é atingir positivamente o maior público alvo, através da disposição uma gama de produtos confeccionados com tecnologia inovadora, pensada por especialistas da área e com custo benefício acessível.</p>
+                </div>
+                <div class="box2">
+                    <img src="src/assets/avatar2.gif">
+                    <img src="src/assets/avatar1.gif">
+                    <img src="src/assets/avatar3.gif">
+                </div>
+            </section>
+            <img class="color-balls5" src="src/assets/balls6.svg">
+            <section class="faq" id="fifth-section" data-collapse data-aos="up">
+                <h2>Dúvidas frequentes</h2>
+                <ul>
+                    <li>
+                        <h4>Os produtos Avlis são eficientes nos casos de queda de cabelo?</h4>
+                        <div>
+                            <span>Possuímos linhas de revitaliazação dos bulbos capilares e soluções a base de minoxidil, que atua na vascularização dos vasos responsáveis pelo crescimento dos fios.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Qual a procedência dos ativos usados na confecção dos produtos?</h4>
+                        <div>
+                            <span>Priorizamos sustentabilidade, por isso investimos muito em inovação ecológica e soluções para nossos clientes que não agridam o meio ambiente.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Qual é o prazo estimado para surgimento de efeitos no uso dos cosméticos Avlis?</h4>
+                        <div>
+                            <span>A produção de nossas linhas é realizada por profissionis especialistas do segmento, portanto os resultados surgem rapidamente com eficácia comprovada em um número significativo dos casos.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>O que explica o custo benefício acessível?</h4>
+                        <div>
+                            <span>Acreditamos que todos devem ter acesso à saúde e beleza, parcerias com excelentes formecedores nos permite tornar esse ideal uma possibilidade.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Onde posso adquirir os cosméticos?</h4>
+                        <div>
+                            <span>Atuamos no mercado ao longo dos ultimos cinco anos com nossas linhas comecializadas nas maiores lojas, com o surgimento da pandemia de Covid-19, voltamos nossa atenção aos serviços de e-commerce e percebemos um nicho incrível para expansão.</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <img class="color-balls6" src="src/assets/balls5.svg">
+            <img class="color-balls7" src="src/assets/balls2.svg">
         </main>
         <footer>
-            
-        </footer>
-        <div class="modal-container" data-modal="container">
-            <div class="modal">
-                <button class="close-Btn" data-modal="close">x</button>
-            </div>
-        </div>
-        <div class="modal-container" data-modal="container">
-            <div class="modal">
-                <button class="close-Btn" data-modal="close">x</button>
-            </div>
-        </div>
-        <div class="modal-container" data-modal="container">
-            <div class="modal">
-                <button class="close-Btn" data-modal="close">x</button>
-            </div>
-        </div>
-        <div class="modal-container" data-modal="container">
-            <div class="modal">
-                <button class="close-Btn" data-modal="close">x</button>
-            </div>
-        </div>
-        <script type="module" src="js/script.js"></script>
+            <ul class="list-1">
+                <li>
+                    <div>
+                        <a href="#first-section"><img src="src/assets/diamond.svg" alt="diamond icon"><span>Avlis</span> Cosméticos</a>
+                        <div>
+                            <img src="src/assets/locate.svg" alt="Ícone de localização">
+                            <span>Av. Candido Portinari, 54 - 6 º Andar - Barueri</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h4>Institucional</h4>
+                    <ul class="list-2">
+                        <li>
+                            <a href="#fourth-section">Sobre Nós</a>
+                        </li>
+                        <li>
+                            <a href="#">Política de Preivacidade</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Acompanhe</h4>
+                    <ul class="list-2">
+                        <li>
+                            <a href="#"><img src="src/assets/facebook.svg" alt="Ícone do Facebook">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="src/assets/instagram.svg" alt="Ícone do Instagram">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="src/assets/linkedin.svg" alt="Ícone do LinkedIn">LinkedIn</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="copyright">Avlis Cosméticos &#169; Todos Direitos Reservados</span>
+        </footer>        
+        <script type="module" src="src/js/script.js"></script>
     </body>
-    </html>
+</html>
