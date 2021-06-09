@@ -58,9 +58,9 @@ body {
 
 .color-balls2 {
   position: absolute;
-  top: 1560px;
-  left: 6%;
-  width: 50%;
+  top: 1770px;
+  left: 24%;
+  width: 30%;
   z-index: -1;
 }
 

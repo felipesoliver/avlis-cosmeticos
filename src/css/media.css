@@ -19,9 +19,9 @@
   }
 
   .color-balls2 {
-    top: 1580px;
+    top: 1610px;
     left: 50%;
-    width: 100%;
+    width: 70%;
     transform: translateX(-50%);
   }
 
@@ -495,6 +495,7 @@
     font-size: 16px;
     line-height: 26px;
     text-align: left;
+    letter-spacing: 1px;
   }
   .about .box1 p::before {
     left: 106px;
@@ -536,6 +537,7 @@
     height: initial;
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: 1px;
   }
 
   footer {
@@ -554,6 +556,7 @@
   }
   footer .list-1 li:nth-child(1) div a {
     letter-spacing: 5px;
+    color: #ffb6d8;
   }
   footer .list-1 li:nth-child(1) div a span {
     min-width: initial;
@@ -564,6 +567,7 @@
   footer .list-1 li:nth-child(2) h4,
 footer .list-1 li:nth-child(3) h4 {
     width: 100%;
+    color: #ffb6d8;
   }
   footer .list-1 li:nth-child(2) .list-2,
 footer .list-1 li:nth-child(3) .list-2 {
@@ -575,7 +579,7 @@ footer .list-1 li:nth-child(3) .list-2 li {
   }
   footer .copyright {
     width: 78%;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
   }
 }

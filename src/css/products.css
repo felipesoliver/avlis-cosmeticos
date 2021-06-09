@@ -4,7 +4,7 @@
 }
 
 .products ul {
-  background: linear-gradient(45deg, #ffffff65 70%, #ffbcbc65);
+  background: linear-gradient(45deg, #ffffff65 70%, #ffb9eace);
   backdrop-filter: blur(10px);
 }
 
@@ -59,9 +59,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, #ecbbff, #fc9e9e);
+  background: linear-gradient(to bottom, #ecbbff 10%, #ff83ee);
   border-radius: 20px;
-  box-shadow: -3px -3px 0 0 #ffe3e3, 3px 3px 0 0 #fc9e9e;
+  box-shadow: -3px -3px 0 0 #ffe3e3, 3px 3px 0 0 #ffb6d8;
 }
 .products li img {
   width: 70%;

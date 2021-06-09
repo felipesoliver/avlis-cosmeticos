@@ -2,11 +2,6 @@
   border-radius: 20px;
 }
 
-.faq ul {
-  background: #ffffff65;
-  backdrop-filter: blur(10px);
-}
-
 .faq h2 {
   position: absolute;
   top: -80px;
@@ -41,6 +36,7 @@
   justify-content: flex-start;
   flex-direction: column;
   flex-shrink: 0;
+  background: #ffffff65;
   box-shadow: -1px -1px 0 0 #ffffff;
 }
 .faq ul li {
@@ -73,7 +69,7 @@
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 2px;
-  background: #ffe1e1b2;
+  background: #ffd3f3;
   cursor: pointer;
   border-bottom: solid 1px #fff;
   z-index: 10;
