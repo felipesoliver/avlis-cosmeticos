@@ -342,13 +342,16 @@
   }
   .products ul li {
     margin-bottom: 26px;
-    width: 45%;
-    height: 38vh;
+    width: 140px;
+    height: fit-content;
     background: #ffffff75;
     backdrop-filter: 5px;
   }
   .products ul li img {
     width: 64%;
+  }
+  .products ul li figure {
+    height: 140px;
   }
   .products ul li figcaption {
     margin: 20px 0;
@@ -404,6 +407,9 @@
     width: 100%;
     text-align: left;
   }
+  .features ul li img {
+    width: 60px;
+  }
 
   /* Comments */
   .comments {
@@ -422,13 +428,19 @@
     justify-content: space-between;
   }
   .comments ul li {
-    width: 46%;
+    width: 140px;
     height: fit-content;
   }
   .comments ul li:nth-child(2) div {
     height: 440px;
   }
   .comments ul li:nth-child(2) div:hover {
+    height: 440px;
+  }
+  .comments ul li:nth-child(3) div {
+    height: 450px;
+  }
+  .comments ul li:nth-child(3) div:hover {
     height: 440px;
   }
   .comments ul li:nth-child(4) div {
@@ -438,7 +450,7 @@
     height: 460px;
   }
   .comments ul li div {
-    min-width: 150px;
+    min-width: 140px;
     height: 420px;
     background: #ffffff75;
   }
@@ -466,6 +478,7 @@
   .comments ul li div figure:after {
     width: 98px;
     height: 98px;
+    background: #fff;
   }
   .comments ul li div span {
     opacity: 1;
@@ -522,7 +535,8 @@
     top: initial;
     bottom: 120px;
     width: 126px;
-    right: 32px;
+    right: initial;
+    left: 210px;
   }
   .about .box2 img:nth-child(3) {
     width: 108px;
