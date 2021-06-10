@@ -20,7 +20,7 @@
 .comments ul li div figure {
   background: linear-gradient(to bottom, #f2d2ff, #ffa4f3);
   border-radius: 20px;
-  box-shadow: -3px -3px 0 0 #ffe3e3, 3px 3px 0 0 #ffb6d8;
+  box-shadow: -3px -3px 0 0 #ffffff, 3px 3px 0 0 #ffb6d8;
 }
 
 @keyframes fadeIn {
@@ -62,7 +62,7 @@
   margin-top: 50px;
 }
 .comments ul li:nth-child(1) div figure:before {
-  background-image: url(../../assets/comment-bg1.jpg);
+  background-image: url(/src/assets/comment-bg1.jpg);
 }
 .comments ul li:nth-child(1) div span::before {
   content: "★★★★★";
@@ -83,7 +83,7 @@
   transform: translateX(-50%);
 }
 .comments ul li:nth-child(2) div figure:before {
-  background-image: url(../../assets/comment-bg2.jpg);
+  background-image: url(/src/assets/comment-bg2.jpg);
 }
 .comments ul li:nth-child(2) div span::before {
   content: "★★★★★";
@@ -104,7 +104,7 @@
   transform: translateX(-50%);
 }
 .comments ul li:nth-child(3) div figure:before {
-  background-image: url(../../assets/comment-bg3.jpg);
+  background-image: url(/src/assets/comment-bg3.jpg);
 }
 .comments ul li:nth-child(3) div span::before {
   content: "★★★★★";
@@ -125,7 +125,7 @@
   transform: translateX(-50%);
 }
 .comments ul li:nth-child(4) div figure:before {
-  background-image: url(../../assets/comment-bg4.jpg);
+  background-image: url(/src/assets/comment-bg4.jpg);
 }
 .comments ul li:nth-child(4) div span::before {
   content: "★★★★★";
