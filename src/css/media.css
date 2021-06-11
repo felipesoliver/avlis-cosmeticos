@@ -26,7 +26,7 @@
   }
 
   .color-balls3 {
-    top: 2254px;
+    top: 2300px;
     right: 10px;
     width: 70%;
   }
@@ -45,18 +45,8 @@
   .color-balls6 {
     display: inline-block;
     position: absolute;
-    top: 4840px;
+    top: 4875px;
     left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-  }
-
-  .color-balls7 {
-    display: inline-block;
-    position: absolute;
-    top: 6290px;
-    left: 50%;
-    width: 100%;
     transform: translateX(-50%);
     z-index: -1;
   }
@@ -478,7 +468,7 @@
   .comments ul li div figure:after {
     width: 98px;
     height: 98px;
-    background: #fff;
+    background: #fdd8f8;
   }
   .comments ul li div span {
     opacity: 1;
@@ -557,11 +547,22 @@
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
+    background: #ffd5f9;
   }
 
   footer {
+    position: relative;
     margin-top: 100px;
     width: 100%;
+  }
+  footer .color-balls7 {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
   }
   footer .list-1 {
     height: fit-content;

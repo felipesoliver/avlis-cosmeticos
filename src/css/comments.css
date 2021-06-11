@@ -20,7 +20,7 @@
 .comments ul li div figure {
   background: linear-gradient(to bottom, #f2d2ff, #ffa4f3);
   border-radius: 20px;
-  box-shadow: -3px -3px 0 0 #ffffff, 3px 3px 0 0 #ffb6d8;
+  box-shadow: -3px -3px 0 0 #fdd8f8, 3px 3px 0 0 #ffb6d8;
 }
 
 @keyframes fadeIn {

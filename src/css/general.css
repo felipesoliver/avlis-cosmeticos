@@ -35,7 +35,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: #f5ddff;
+  background: #f7e5ff;
   animation: fadein 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
   overflow-x: hidden;
 }
