@@ -57,13 +57,13 @@
   .modal {
     padding: 35px;
     width: 84%;
-    height: 90vh;
+    height: 80vh;
   }
 
   .close-Btn {
     font-family: "Nunito", sans-serif;
-    top: 3px;
-    right: 18px;
+    top: -56px;
+    right: 0px;
     font-size: 32px;
     font-weight: 600;
   }
