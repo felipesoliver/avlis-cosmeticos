@@ -47,8 +47,25 @@
     position: absolute;
     top: 4875px;
     left: 50%;
+    width: 100%;
     transform: translateX(-50%);
     z-index: -1;
+  }
+
+  /* Modal */
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap");
+  .modal {
+    padding: 35px;
+    width: 84%;
+    height: 90vh;
+  }
+
+  .close-Btn {
+    font-family: "Nunito", sans-serif;
+    top: 3px;
+    right: 18px;
+    font-size: 32px;
+    font-weight: 600;
   }
 
   /* Navmenu */

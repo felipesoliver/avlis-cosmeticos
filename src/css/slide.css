@@ -1,22 +1,19 @@
-.slide-wrapper {
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    overflow: hidden;
+[data-modal=slide-wrapper] {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.slide-track {
-    width: 100%;
-    display: flex;
+[data-modal=slide-track] {
+  width: 100%;
+  display: flex;
 }
 
-.slide-items {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-shrink: 0;
+[data-modal=slide-items] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-img {
-    max-width: 100%;
-}
+/*# sourceMappingURL=slide.css.map */
