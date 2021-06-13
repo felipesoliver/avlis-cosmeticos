@@ -4,6 +4,7 @@ import initToggleNavBar from './toggle-menu.js';
 import initDropDownMenu from './dropdown-menu.js';
 import initModal from './modal.js';
 import initCollapse from './collapse.js';
+import Slide from './slide.js'
 
 initAOS();
 initBurgerBtn();
@@ -11,3 +12,4 @@ initToggleNavBar();
 initDropDownMenu();
 initModal();
 initCollapse();
+new Slide()

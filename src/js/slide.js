@@ -1,6 +1,8 @@
 export default class Slide {
-    constructor(slide, wrapper) {
-        this.slide = document.querySelector(slide);
+    constructor(wrapper, slide) {
         this.wrapper = document.querySelector(wrapper);
+        this.slide = document.querySelectorAll(slide);
     }
 }
+const showSlide = new Slide('[data-modal="slide-wrapper"]','[data-modal="slide-items"]');
+console.log(showSlide);
