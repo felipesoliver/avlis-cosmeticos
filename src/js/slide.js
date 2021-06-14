@@ -1,8 +1,9 @@
-export default class Slide {
-    constructor(wrapper, slide) {
-        this.wrapper = document.querySelector(wrapper);
-        this.slide = document.querySelectorAll(slide);
+export default function initSlide() {
+    const slide = {
+        wrapper: document.querySelectorAll('[data-modal="slide-wrapper"]'),
+        track: document.querySelector('[data-modal="slide-wrapper"] ul'),
+        items: document.querySelectorAll('[data-modal="slide-wrapper"] ul li')
     }
+
+    console.log(slide);
 }
-const showSlide = new Slide('[data-modal="slide-wrapper"]','[data-modal="slide-items"]');
-console.log(showSlide);
