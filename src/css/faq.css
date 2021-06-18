@@ -26,6 +26,8 @@
   align-items: center;
   justify-content: center;
   box-sizing: content-box;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .faq ul {
@@ -73,6 +75,8 @@
   cursor: pointer;
   border-bottom: solid 1px #fff;
   z-index: 10;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .faq ul li h4::before {
   content: "";
