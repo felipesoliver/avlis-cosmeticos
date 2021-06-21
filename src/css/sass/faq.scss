@@ -1,0 +1,160 @@
+@import 'sass-features.scss';
+
+.faq {
+    position: relative;
+    margin-top: 200px;
+    padding-top: 80px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.faq {
+    h2 {
+        @extend %sections-title;
+    }
+
+    ul {
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-shrink: 0;        
+        background: #ffffff65;
+        @extend %border-radius;
+        box-shadow: -1px -1px 0 0 #ffffff;
+    }
+
+    ul {
+        li {
+            width: 100%;
+            height: fit-content;
+            color: $secundary-color;
+        }
+
+        li {
+
+            &:first-child {
+                h4 {
+                    border-radius: 20px 20px 0 0;
+                }
+            }
+
+            &:last-child {
+                h4 {
+                    border-radius: 0 0 20px 20px;
+                    border: none;
+                }
+
+                h4.active {
+                    border-radius: 0;
+                    border-bottom: solid 1px $primary-color;
+                }
+
+                div {
+                    border: none;
+                }
+            }
+
+            h4 {
+                position: relative;
+                padding: 30px;
+                width: 100%;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                background: #ffd3f3;
+                cursor: pointer;
+                border-bottom: solid 1px $primary-color;
+                z-index: 10;
+
+                -webkit-user-select: none;
+                user-select: none;
+            }
+            
+            h4 {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    width: 20px;
+                    height: 4px;
+                    transform: translateY(-50%) rotate(0);
+                    background: #e6a6ff;
+                    transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                }
+
+                &.active::before {
+                    transform: translateY(-50%) rotate(180deg);
+                    transform-origin: center;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 28px;
+                    width: 4px;
+                    height: 20px;
+                    transform: translateY(-50%) rotate(0);
+                    background: #e6a6ff;
+                    transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                }
+
+                &.active::after {
+                    transform: translateY(-50%) rotate(90deg);
+                    transform-origin: center;
+                }
+            }
+
+            div {
+                padding: 0;
+                max-height: 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                line-height: 26px;
+                // border-bottom: solid 1px $primary-color;
+                transition: all .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            }
+
+            div.active {
+                padding: 18px 30px;
+                max-height: fit-content;
+            }
+
+            @keyframes showUp{
+                0% {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            div {
+                span {
+                    opacity: 0;
+                }
+
+                &.active span{
+                    animation: showUp .3s cubic-bezier(0.455, 0.03, 0.515, 0.955) .1s forwards;
+                }
+            }
+        }
+    }
+}
